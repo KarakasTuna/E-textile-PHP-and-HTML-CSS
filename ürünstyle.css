@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.product-detail {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-detail h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.product-detail .buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+
+
+
+/*sağ sol butonu*/
+
+/* Genel stil */
+.product-detail {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.main-image:hover {
+    transform: scale(1.1);  /* Görüntü büyütme efekti */
+}
+
+/* Navigasyon butonları */
+.navigation-buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 250px; /* Butonlar arasına boşluk ekler */
+}
+
+.nav-button {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 60px; /* Buton boyutunu artırdık */
+    height: 60px; /* Buton boyutunu artırdık */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: #555;  /* Hover ile koyulaşma */
+    transform: scale(1.1);  /* Hover ile buton büyür */
+}
+
+/* Sepete Ekle butonu */
+.buy-button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.buy-button:hover {
+    background-color: #45a049;
+}
+
+/* Metin stil */
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Katagoriphp {
+    position: fixed;
+    /* Sabit konumlandırma ile sayfanın sol kenarına yerleştirir */
+    top: 100px;
+    /* Sayfanın üstünden 100px aşağıda başlar */
+    left: 0;
+    /* Sayfanın sol kenarına yerleştirir */
+    background-color: white;
+    /* Koyu bir arka plan rengi */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    /* Hafif bir gölge efekti */
+    padding-top: 20px;
+    z-index: 10;
+    /* Diğer içeriklerin üstünde yer alır */
+    width: 200px;
+    /* Kategorinin genişliği */
+    height: calc(100vh - 100px);
+    /* Kategorinin yüksekliği, arama çubuğunun hemen altından başlar */
+    overflow-y: auto;
+    /* Kategorinin içeriği kaydırılabilir yapar */
+}
+
+.Katagoriphp ul {
+    list-style-type: none;
+    /* Liste işaretlerini kaldır */
+    padding: 0;
+    /* Varsayılan padding'i kaldır */
+    margin: 0;
+    /* Varsayılan margin'i kaldır */
+}
+
+.Katagoriphp ul li {
+    margin-bottom: 20px;
+    /* Her bir liste öğesi arasında boşluk */
+}
+
+.Katagoriphp ul li a {
+    text-decoration: none;
+    /* Bağlantı altını çizgiden kaldır */
+    color: black;
+    /* Metin rengini beyaz yap */
+    font-size: 18px;
+    /* Metin boyutunu 18px yap */
+    font-weight: bold;
+    /* Kalın yazı tipi */
+    display: block;
+    /* Bağlantıyı tam genişlikte blok olarak yap */
+    padding: 10px 20px;
+    /* Bağlantıya iç boşluk ekle */
+    transition: background-color 0.3s ease;
+    /* Geçiş efekti ekle */
+}
+
+.Katagoriphp ul li a:hover {
+    background-color: #007bff;
+    /* Hover (üzerine gelme) durumunda arka planı mavi yap */
+    border-radius: 5px;
+   
+    /* Kenarları yuvarlat */
+}
+
+
+
+.product-detail .rating {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #FFD700; /* Altın sarısı renkte yıldızlar */
+    display: flex;
+    gap: 5px;
+}
+
+.product-detail .rating span {
+    color: #FFD700; /* Yıldızları altın sarısı yapıyoruz */
+}
+
+/* Yıldız derecelendirme kısmının alt kısmı ve yerleşimi */
+.product-detail .rating {
+    text-align: center; /* Derecelendirmeyi merkeze yerleştiriyoruz */
+}
+
+.product-detail .rating span {
+    font-size: 1.8rem; /* Yıldızların boyutunu biraz büyütüyoruz */
+}
+
+
+
+.comments-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.rating {
+    font-size: 18px;
+    color: #f39c12;
+}
+
+.comment p {
+    font-size: 1rem;
+    color: #555;
+}

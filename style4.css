@@ -1,0 +1,252 @@
+html, body {
+    height: 100%; /* Sayfanın tamamını kapsar */
+    margin: 0; /* Varsayılan margin'i sıfırlar */
+    overflow: auto; /* Kaydırma çubuğunu ekler */
+}
+
+.Tekstil-Dünyası ul {
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.Tekstil-Dünyası ul li {
+    margin: 0 65px;
+    color: white;
+}
+
+.Tekstil-Dünyası ul li a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10; /* Diğer öğelerin üstünde kalır */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif bir gölge */
+    text-align: center;
+}
+
+.search input[type="text"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Arama kutusu ile buton arasına boşluk eklemek için */
+}
+
+.search button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Katagori {
+    position: fixed; /* Sabit konumlandırma ile sayfanın sol kenarına yerleştirir */
+    top: 100px; /* Sayfanın üstünden 100px aşağıda başlar */
+    left: 0; /* Sayfanın sol kenarına yerleştirir */
+    background-color: white; /* Koyu bir arka plan rengi */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Hafif bir gölge efekti */
+    padding-top: 20px;
+    z-index: 10; /* Diğer içeriklerin üstünde yer alır */
+    width: 200px; /* Kategorinin genişliği */
+    height: calc(100vh - 100px); /* Kategorinin yüksekliği, arama çubuğunun hemen altından başlar */
+    overflow-y: auto; /* Kategorinin içeriği kaydırılabilir yapar */
+}
+
+.Katagori ul {
+    list-style-type: none; /* Liste işaretlerini kaldır */
+    padding: 0; /* Varsayılan padding'i kaldır */
+    margin: 0; /* Varsayılan margin'i kaldır */
+}
+
+.Katagori ul li {
+    margin-bottom: 20px; /* Her bir liste öğesi arasında boşluk */
+}
+
+.Katagori ul li a {
+    text-decoration: none; /* Bağlantı altını çizgiden kaldır */
+    color: black; /* Metin rengini beyaz yap */
+    font-size: 18px; /* Metin boyutunu 18px yap */
+    font-weight: bold; /* Kalın yazı tipi */
+    display: block; /* Bağlantıyı tam genişlikte blok olarak yap */
+    padding: 10px 20px; /* Bağlantıya iç boşluk ekle */
+    transition: background-color 0.3s ease; /* Geçiş efekti ekle */
+}
+
+.Katagori ul li a:hover {
+    background-color: #007BFF; /* Hover (üzerine gelme) durumunda arka planı mavi yap */
+    border-radius: 5px; /* Kenarları yuvarlat */
+}
+
+.scroll-continer {
+    margin-top: 180px; /* Arama çubuğu ve kategori kısmından biraz daha aşağıda yer alması için */
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Scrollbar ayarları */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.featured-section {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.featured-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.featured-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item {
+    background: #f9f9f9;
+    width: 22%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.item:hover {
+    transform: scale(1.05);
+}
+.item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+.item p {
+    font-size: 16px;
+    color: #888;
+}
+.item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.item a:hover {
+    background: #e65c00;
+}
+
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.featured-section, .featured-section2 {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-section h2, .featured-section2 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.featured-items, .featured-items2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item, .item2 {
+    background: #f9f9f9;
+    width: 22%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.item:hover, .item2:hover {
+    transform: scale(1.05);
+}
+
+.item img, .item2 img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item h3, .item2 h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.item p, .item2 p {
+    font-size: 16px;
+    color: #888;
+}
+
+.item a, .item2 a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.item a:hover, .item2 a:hover {
+    background: #e65c00;
+}
+
+

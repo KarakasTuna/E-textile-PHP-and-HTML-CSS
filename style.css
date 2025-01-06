@@ -1,0 +1,531 @@
+html,
+body {
+    height: 100%;
+    /* Sayfanın tamamını kapsar */
+    margin: 0;
+    /* Varsayılan margin'i sıfırlar */
+    overflow: auto;
+    /* Kaydırma çubuğunu ekler */
+}
+
+.Tekstil-Dünyası {
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.Tekstil-Dünyası ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Tekstil-Dünyası ul li {
+    position: relative;
+}
+
+.Tekstil-Dünyası ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Tekstil-Dünyası ul li a i {
+    font-size: 24px; /* İkon boyutu */
+    margin-bottom: 5px;
+}
+
+/* Alt menü (Dropdown) */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1px 0px;
+    border-radius: 8px;
+}
+
+.submenü {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.submenü li {
+    margin: 15px 0;
+}
+
+
+.submenü li a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 1px;
+}
+
+.submenü li a:hover {
+    color: #007bff;
+    
+
+}
+
+.menü-iletisim:hover .dropdown {
+    display: block;
+}
+
+/* Hover efektleri */
+.Tekstil-Dünyası ul li a:hover {
+    color: #007bff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sayfa stil ayarları */
+/*html, body {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}*/
+
+/* İkonlar konteyneri */
+.ikonlar {
+    position: fixed;
+    top: 20px; /* Yukarıdan 20px mesafe */
+    right: 15px; /* Sağdan 15px mesafe */
+    display: flex;
+    gap: 20px; /* İkonlar arasına 20px boşluk bırak */
+    z-index: 9999; /* Diğer öğelerin üstünde kalacak */
+}
+
+/* Sepet ikonu */
+.sepet-ikon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sepet-img {
+    width: 50px;  /* Sepet ikonu genişliği */
+    height: 50px; /* Sepet ikonu yüksekliği */
+}
+
+/* Sepet sayısının görünümü */
+.sepet-sayisi {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+Giris-ikon {
+    position: relative;
+    display: inline-block;
+}
+
+.altkısım {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Giris-ikon:hover .altkısım {
+    display: block;
+}
+
+.altmenü {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.altmenü li {
+    margin-bottom: 10px;
+}
+
+.altmenü li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.altmenü li a:hover {
+    color: #007bff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    /* Diğer öğelerin üstünde kalır */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Hafif bir gölge */
+    text-align: center;
+}
+
+search input[type="text"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    /* Arama kutusu ile buton arasına boşluk eklemek için*/
+
+} 
+
+
+.search button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Ana Kategori Stili */
+.Katagori {
+    position: relative;
+    display: inline-block;
+
+    /**/
+    left: 0;
+    /* Sayfanın sol kenarına yerleştirir */
+    background-color: white;
+    /* Koyu bir arka plan rengi */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    /* Hafif bir gölge efekti */
+    width: 20px;
+
+}
+
+/* Menü İkonu Stili */
+.menu-ikon {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Listeyi Gizle */
+.Katagori ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 150px;
+    background-color: #ffffff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+
+
+/* Liste Öğeleri */
+.Katagori ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.Katagori ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.Katagori ul li a:hover {
+   /* background-color: #f0f0f0;*/
+   background-color: #007BFF;
+   border-radius: 5px;
+}
+
+
+/* Tıklama ile Aç/Kapat Menü */
+.menu-ikon.active + ul {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scroll-continer {
+    margin-top: 180px;
+    /* Arama çubuğu ve kategori kısmından biraz daha aşağıda yer alması için */
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Scrollbar ayarları */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.featured-section {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.featured-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item {
+    background: #f9f9f9;
+    width: 22%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.item p {
+    font-size: 16px;
+    color: #888;
+}
+
+.item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.item a:hover {
+    background: #e65c00;
+}
+
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.featured-section,
+.featured-section2 {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-section h2,
+.featured-section2 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.featured-items,
+.featured-items2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item,
+.item2 {
+    background: #f9f9f9;
+    width: 22%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.item:hover,
+.item2:hover {
+    transform: scale(1.05);
+}
+
+.item img,
+.item2 img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item h3,
+.item2 h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.item p,
+.item2 p {
+    font-size: 16px;
+    color: #888;
+}
+
+.item a,
+.item2 a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.item a:hover,
+.item2 a:hover {
+    background: #e65c00;
+}
+
+
+
+
+
+
+
+
+
